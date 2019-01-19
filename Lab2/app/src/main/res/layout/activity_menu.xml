@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:background="@android:color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <LinearLayout android:layout_width="345dp" android:layout_height="550dp"
+                  android:orientation="vertical"
+                  android:background="@drawable/fondo"
+    >
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_marginLeft="130dp"
+                    android:layout_width="83dp"
+                    android:layout_height="48dp" app:srcCompat="@drawable/logo" android:id="@+id/imageView"
+                    android:layout_gravity="center"
+            />
+            <Button
+                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="right"
+                    android:text="HOME"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/home"/>
+
+        </LinearLayout>
+
+
+        <TextView
+
+                android:textColor="@android:color/tab_indicator_text"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="The Play Restaurant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/text"/>
+
+        <TextView
+
+                android:background="@android:color/darker_gray"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView" android:textSize="30sp"
+                app:fontFamily="sans-serif-black"/>
+
+        <ListView
+                android:layout_marginTop="32dp"
+                android:layout_gravity="center"
+                android:background="@android:color/white"
+                android:layout_width="271dp"
+                android:layout_height="259dp"
+                android:id="@+id/menulist"
+                android:divider="@color/colorAccent"
+        />
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
