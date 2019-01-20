@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        menu.setOnClickListener {
+        menu.setOnClickListener {//redirigimos los botones
             val intento = Intent(this, Menu::class.java)//Redirigimos al menu
             startActivity(intento)
         }

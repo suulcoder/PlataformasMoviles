@@ -19,7 +19,7 @@ class Menu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
-        val adapter = ArrayAdapter(this,R.layout.listview_item, array)
+        val adapter = ArrayAdapter(this,R.layout.listview_item, array)//Nos permitira agregar el array al ListView
 
         val listView:ListView = findViewById(R.id.menulist)
         listView.setAdapter(adapter)

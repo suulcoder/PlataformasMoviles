@@ -17,7 +17,7 @@ class Orden : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_orden)
 
-        val adapter = ArrayAdapter(this,R.layout.listview_item, ApplicationExt.menuOrder)
+        val adapter = ArrayAdapter(this,R.layout.listview_item, ApplicationExt.menuOrder)//nos permite agregar el array al boton 
 
         val listView: ListView = findViewById(R.id.pedido)
         listView.setAdapter(adapter)
