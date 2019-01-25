@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.activity_crear.*
 class Correo : AppCompatActivity() {
 
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {//empezamos activity
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_correo)
 
@@ -35,7 +35,7 @@ class Correo : AppCompatActivity() {
             var subject = findViewById(R.id.subject) as EditText
             var message = findViewById(R.id.text) as EditText
 
-        send.setOnClickListener {
+        send.setOnClickListener {//enviamos correo
             val intento1 = Intent(this, Contactos::class.java)
             Toast.makeText(this, message.getText().toString() +  "enviado desde " + recipent.getText().toString() + " hacia " + mailto.getText().toString(),Toast.LENGTH_LONG).show()
             startActivity(intento1)

@@ -28,7 +28,7 @@ class Crear : AppCompatActivity() {
         save.setOnClickListener {
             val Contact1 = Contact(nombre.getText().toString(),telefono.getText().toString(),mail.getText().toString(), R.drawable.fondo3)
             ApplicationExt.add(Contact1)
-            val intento1 = Intent(this,Contacto::class.java)
+            val intento1 = Intent(this,Contacto::class.java)//creamos un nuevo contacto y lo agregamos y enviamos a su respectivo activity
             intento1.putExtra("nombre",Contact1.nombre)
             intento1.putExtra("telefono",Contact1.tele)
             intento1.putExtra("mail",Contact1.email)

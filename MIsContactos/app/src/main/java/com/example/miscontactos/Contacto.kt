@@ -14,7 +14,7 @@ class Contacto : AppCompatActivity() {
         setContentView(R.layout.activity_contacto)
 
 
-        showNombre.setText(getIntent().getStringExtra("nombre"))
+        showNombre.setText(getIntent().getStringExtra("nombre"))//pedimos los datos del intent anterior
         var number = getIntent().getStringExtra("telefono")
         showPhone.setText(number)
         showMail.setText(getIntent().getStringExtra("mail"))
@@ -26,7 +26,7 @@ class Contacto : AppCompatActivity() {
             onStop()
         }
 
-        goMail.setOnClickListener{
+        goMail.setOnClickListener{//enviamos a correo
             val intent = Intent(this, Correo::class.java)
             intent.putExtra("mail", getIntent().getStringExtra("mail"))
             intent.putExtra("numero", getIntent().getStringExtra("telefono"))
@@ -37,11 +37,11 @@ class Contacto : AppCompatActivity() {
 
         call.setOnClickListener{
             try {
-                val intentcall = Intent(Intent.ACTION_CALL,Uri.fromParts("tel",number,null))
+                val intentcall = Intent(Intent.ACTION_CALL,Uri.fromParts("tel",number,null))//si nos otorgan los permisos
                 startActivity(intentcall)
             }
             catch (e: Exception){
-                val intentcall = Intent(Intent.ACTION_DIAL,Uri.fromParts("tel",number,null))
+                val intentcall = Intent(Intent.ACTION_DIAL,Uri.fromParts("tel",number,null))//si no nos otorgan los perimosos
                 startActivity(intentcall)
             }
 
