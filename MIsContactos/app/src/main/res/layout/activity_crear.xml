@@ -29,24 +29,18 @@
                 android:layout_width="wrap_content"
                 android:layout_marginLeft="25sp"
                 android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_menu_save"
-                android:id="@+id/imageButton"
+                android:id="@+id/save"
                 android:layout_gravity="right"/>
 
-        <ImageView
-                android:layout_marginTop="@android:dimen/notification_large_icon_height"
-                android:layout_width="match_parent"
-                android:layout_height="200dp" app:srcCompat="@android:drawable/ic_menu_gallery"
-                android:id="@+id/imageView2"/>
-
         <EditText
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="250dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:text="Nombre"
                 android:ems="10"
                 android:background="@android:color/white"
-                android:id="@+id/nombre" android:textColor="@android:color/black"/>
+                android:id="@+id/nombre" android:textColor="@android:color/black"
+                android:hint="Nombre"/>
 
         <EditText
                 android:layout_marginTop="25dp"
@@ -54,19 +48,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="phone"
-                android:text="Telefono"
                 android:ems="10"
                 android:id="@+id/telefono"
-                android:background="@android:color/white"/>
+                android:background="@android:color/white" android:hint="telefono"/>
         <EditText
                 android:layout_marginTop="25dp"
                 android:textColor="@android:color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="E-mail"
                 android:background="@android:color/white"
                 android:ems="10"
-                android:id="@+id/correo" android:inputType="textEmailAddress"/>
+                android:id="@+id/correo" android:inputType="textEmailAddress" android:hint="E-mail"/>
 
 
 

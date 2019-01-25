@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Contacto"
-        android:background="@drawable/fondo3"
+        android:background="@drawable/fondo2"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal">
 
@@ -27,23 +27,28 @@
         </LinearLayout>
 
         <ImageView
+
                 android:layout_marginTop="@android:dimen/notification_large_icon_height"
                 android:layout_width="match_parent"
                 android:layout_height="200dp" app:srcCompat="@android:drawable/ic_menu_gallery"
-                android:id="@+id/imageView2"/>
+                android:id="@+id/setPhoto"/>
 
-        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+        <LinearLayout android:layout_gravity="center" android:gravity="center" android:layout_marginTop="25sp" android:background="@android:color/holo_blue_dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
 
             <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
                     android:text="Nombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" android:id="@+id/showNombre"
                     android:textColor="@android:color/white"
-                    android:textSize="25dp"/>
+                    android:textSize="35dp"/>
 
         </LinearLayout>
 
-        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" >
+        <LinearLayout android:layout_gravity="center" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:orientation="vertical"
+                      android:background="@android:color/holo_green_light" android:id="@+id/call">
 
             <TextView
                     android:text="Telefono"
@@ -54,15 +59,18 @@
                     android:textSize="25dp"/>
 
             <ImageButton
-                    android:layout_marginLeft="35dp"
+                    android:background="@android:color/holo_green_light"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" app:srcCompat="@android:drawable/stat_sys_phone_call"
-                    android:id="@+id/call"/>
+                    android:layout_height="wrap_content" app:srcCompat="@android:drawable/stat_sys_phone_call"
+                    android:id="@+id/call2"/>
 
 
         </LinearLayout>
 
-        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal"  android:layout_gravity="center" android:gravity="center_horizontal">
+        <LinearLayout android:foregroundGravity="center" android:background="@android:color/holo_red_dark"
+                      android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical" android:layout_gravity="center" android:gravity="center_horizontal"
+                      android:id="@+id/goMail">
 
             <TextView
                     android:text="E-mail"
@@ -73,10 +81,10 @@
                     android:textSize="25dp"/>
 
             <ImageButton
-                    android:layout_marginLeft="35dp"
+                    android:background="@android:color/holo_red_dark"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" app:srcCompat="@android:drawable/ic_dialog_email"
-                    android:id="@+id/goMail"/>
+                    android:id="@+id/goMail2"/>
 
 
         </LinearLayout>
