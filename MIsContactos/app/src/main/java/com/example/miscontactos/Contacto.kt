@@ -28,6 +28,9 @@ class Contacto : AppCompatActivity() {
 
         goMail.setOnClickListener{
             val intent = Intent(this, Correo::class.java)
+            intent.putExtra("mail", getIntent().getStringExtra("mail"))
+            intent.putExtra("numero", getIntent().getStringExtra("telefono"))
+            intent.putExtra("message" , "Mi nombre es " + getIntent().getStringExtra("nombre")+ ", y mi telefono es " + number)
             startActivity(intent)
             onStop()
         }
